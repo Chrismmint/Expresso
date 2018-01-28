@@ -1,0 +1,7 @@
+::1 - - [28/Jan/2018:09:50:55 +0000] "GET /api/employees HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+::1 - - [28/Jan/2018:09:50:55 +0000] "GET /api/menus HTTP/1.1" 200 12 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+::1 - - [28/Jan/2018:09:50:58 +0000] "OPTIONS /api/menus HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+::1 - - [28/Jan/2018:09:50:58 +0000] "POST /api/menus HTTP/1.1" 201 31 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+::1 - - [28/Jan/2018:09:50:58 +0000] "GET /api/menus/1/menu-items HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+::1 - - [28/Jan/2018:09:51:07 +0000] "OPTIONS /api/menus/1/menu-items/undefined HTTP/1.1" 204 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+::1 - - [28/Jan/2018:09:51:07 +0000] "DELETE /api/menus/1/menu-items/undefined HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"

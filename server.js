@@ -5,7 +5,10 @@ const bodyParser = require('body-parser');
 //const errorhandler = require('errorhandler');
 const cors = require('cors');
 const morgan = require('morgan');
-
+const fs = require('fs');
+const path = require('path');
+// create a write stream (in append mode)
+const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'})
 //api apiRouter
 const apiRouter = require('./api/apiRouter')
 
@@ -17,7 +20,7 @@ const db = new sqlite3.Database(process.env.TEST_DATABASE || './database.sqlite'
 const PORT = process.env.PORT || 4001;
 
 //middleware usage
-app.use(morgan('dev'));
+app.use(morgan('combined', {stream: accessLogStream}));
 app.use(bodyParser.json());
 app.use(cors());
 //app.use(errorhandler())

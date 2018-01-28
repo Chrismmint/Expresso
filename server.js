@@ -21,7 +21,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(cors());
 //app.use(errorhandler())
-//app.use(express.static('public'));
+app.use(express.static('public'));
 
 //initial routing
 app.use('/api', apiRouter);
